@@ -1,40 +1,44 @@
 {
  "site": "jor-digital-books",
  "v": 2,
- "books": [
+ "books": [],
+ "bin": [
   {
-   "id": "special-intrest-group-tours-of-ireland-2027-2028",
-   "title": "Special Interest Group Tours of Ireland 2027-2028",
-   "desc": "",
-   "n": 37,
-   "ver": 2,
-   "aspect": 1.78,
-   "cover": "special-intrest-group-tours-of-ireland-2027-2028/v2/cover.webp",
-   "ext": "webp",
-   "updated": "2026-09-28T20:51:16.553Z",
-   "listed": true,
-   "pdf": "SYTA Brochure Pricing_Final_Sept 2026.pdf",
-   "uid": "c4orbfa0psx8j",
-   "first": "2026-09-28T20:43:29.731Z",
-   "history": [
-    {
-     "id": "special-intrest-group-tours-of-ireland-2027-2028",
-     "title": "Special Intrest Group Tours of ireland 2027-2028",
-     "desc": "",
-     "n": 37,
-     "ver": 1,
-     "aspect": 1.78,
-     "cover": "special-intrest-group-tours-of-ireland-2027-2028/v1/cover.webp",
-     "ext": "webp",
-     "updated": "2026-09-28T20:43:29.731Z",
-     "listed": true,
-     "pdf": "SYTA Brochure Pricing_Final_Sept 2026.pdf",
-     "uid": "c4orbfa0psx8j",
-     "first": "2026-09-28T20:43:29.731Z",
-     "commit": "7e6690c3c32e9244636854f9dfbb0c3d2fef4254"
-    }
-   ]
+   "entry": {
+    "id": "special-intrest-group-tours-of-ireland-2027-2028",
+    "title": "Special Interest Group Tours of Ireland 2027-2028",
+    "desc": "",
+    "n": 37,
+    "ver": 2,
+    "aspect": 1.78,
+    "cover": "special-intrest-group-tours-of-ireland-2027-2028/v2/cover.webp",
+    "ext": "webp",
+    "updated": "2026-09-28T20:51:16.553Z",
+    "listed": true,
+    "pdf": "SYTA Brochure Pricing_Final_Sept 2026.pdf",
+    "uid": "c4orbfa0psx8j",
+    "first": "2026-09-28T20:43:29.731Z",
+    "history": [
+     {
+      "id": "special-intrest-group-tours-of-ireland-2027-2028",
+      "title": "Special Intrest Group Tours of ireland 2027-2028",
+      "desc": "",
+      "n": 37,
+      "ver": 1,
+      "aspect": 1.78,
+      "cover": "special-intrest-group-tours-of-ireland-2027-2028/v1/cover.webp",
+      "ext": "webp",
+      "updated": "2026-09-28T20:43:29.731Z",
+      "listed": true,
+      "pdf": "SYTA Brochure Pricing_Final_Sept 2026.pdf",
+      "uid": "c4orbfa0psx8j",
+      "first": "2026-09-28T20:43:29.731Z",
+      "commit": "7e6690c3c32e9244636854f9dfbb0c3d2fef4254"
+     }
+    ]
+   },
+   "commit": "12ff2240148679d4dc295cb8c3b464bd39b76987",
+   "removed": "2026-09-30T19:57:45.789Z"
   }
- ],
- "bin": []
+ ]
 }
