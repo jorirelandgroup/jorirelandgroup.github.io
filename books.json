@@ -1,7 +1,24 @@
 {
  "site": "jor-digital-books",
  "v": 2,
- "books": [],
+ "books": [
+  {
+   "id": "syta-brochure-pricing",
+   "title": "SYTA Brochure Pricing",
+   "desc": "",
+   "n": 37,
+   "ver": 1,
+   "aspect": 1.78,
+   "cover": "syta-brochure-pricing/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-09-30T21:26:05.882Z",
+   "listed": true,
+   "pdf": "SYTA Brochure Pricing_Final_Table of Content.pdf",
+   "uid": "j44rg3pfm7ewq",
+   "first": "2026-09-30T21:26:05.882Z",
+   "history": []
+  }
+ ],
  "bin": [
   {
    "entry": {
