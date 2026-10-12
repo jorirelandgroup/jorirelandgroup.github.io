@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "10-days-ireland-and-iceland",
+   "title": "10 Days Ireland & Iceland",
+   "desc": "",
+   "n": 8,
+   "ver": 1,
+   "aspect": 1.41,
+   "cover": "10-days-ireland-and-iceland/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-10-12T19:54:21.072Z",
+   "listed": true,
+   "pdf": "10 Days Ireland & Iceland_Final_Vista Print.pdf",
+   "uid": "kskgd7q5o7ndc",
+   "first": "2026-10-12T19:54:21.072Z",
+   "history": []
+  },
+  {
    "id": "syta-brochure-pricing",
    "title": "SYTA Brochure Pricing",
    "desc": "",
