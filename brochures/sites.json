@@ -97,6 +97,22 @@
    "ver": 1,
    "listed": true,
    "history": []
+  },
+  {
+   "id": "itineraries-2027-28",
+   "title": "Experience Ireland – New Itineraries",
+   "years": "2027 / 2028",
+   "tagline": "With the DMC Who Knows It Best",
+   "code": "itin",
+   "tours": 12,
+   "from": 895,
+   "size": 16750376,
+   "built": "2026-10-18",
+   "card": true,
+   "at": "2026-10-18T15:24:48.180Z",
+   "ver": 1,
+   "listed": true,
+   "history": []
   }
  ],
  "bin": []
