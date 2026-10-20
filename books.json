@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "itineraries-2027-28",
+   "title": "itineraries 2027-28",
+   "desc": "",
+   "n": 53,
+   "ver": 1,
+   "aspect": 1.41,
+   "cover": "itineraries-2027-28/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-10-20T20:39:46.799Z",
+   "listed": true,
+   "pdf": "New Itineraries 2027-28.pdf",
+   "uid": "12h6yue85cvvz",
+   "first": "2026-10-20T20:39:46.799Z",
+   "history": []
+  },
+  {
    "id": "itineraries-2027-2028",
    "title": "itineraries-2027-2028",
    "desc": "",
