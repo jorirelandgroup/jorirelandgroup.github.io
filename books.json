@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "itineraries-2027-2028",
+   "title": "Itineraries 2027-2028",
+   "desc": "",
+   "n": 53,
+   "ver": 1,
+   "aspect": 1.41,
+   "cover": "itineraries-2027-2028/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-10-20T21:03:19.236Z",
+   "listed": true,
+   "pdf": "New Itineraries 2027-28.pdf",
+   "uid": "e6zz5759675qd",
+   "first": "2026-10-20T21:03:19.236Z",
+   "history": []
+  },
+  {
    "id": "active-retired-group-tours-ireland-2027-2028",
    "title": "Active Retired Group Tours Ireland 2027-2028",
    "desc": "",

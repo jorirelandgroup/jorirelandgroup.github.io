@@ -188,6 +188,8 @@ const ICON = {
   mail: '<rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/>',
   chat: '<path d="M20 11.5a8 8 0 01-11.8 7L4 19.8l1.3-4A8 8 0 1120 11.5z"/>',
   li: '<rect x="3.5" y="3.5" width="17" height="17" rx="3"/><path d="M8 10.5V16M8 7.6v.1M11.5 16v-3.2a2.3 2.3 0 014.6 0V16M11.5 10.5V16"/>',
+  one: '<rect x="7" y="4" width="10" height="16" rx="1.5"/>',
+  two: '<rect x="2.5" y="5" width="9.5" height="14" rx="1.3"/><rect x="12" y="5" width="9.5" height="14" rx="1.3"/>',
   first: '<path d="M17 5l-7 7 7 7M7 5v14"/>',
   last: '<path d="M7 5l7 7-7 7M17 5v14"/>'
 };
@@ -287,6 +289,7 @@ function boot(B) {
       '<button class="jf-b" data-a="next" aria-label="Next page">' + svg('next') + '</button>' +
       '<span class="jf-sep"></span>' +
       '<button class="jf-b" data-a="grid" aria-label="All pages" title="All pages">' + svg('grid') + '</button>' +
+      (N > 1 ? '<button class="jf-b jf-dsk" data-a="view"></button>' : '') +
       (B.outline && B.outline.length ? '<button class="jf-b jf-dsk" data-a="toc" aria-label="Contents" title="Contents">' + svg('toc') + '</button>' : '') +
       (B.search ? '<button class="jf-b" data-a="search" aria-label="Search" title="Search">' + svg('search') + '</button>' : '') +
       '<button class="jf-b jf-dsk" data-a="zoom" aria-label="Zoom in" title="Zoom in">' + svg('zin') + '</button>' +
@@ -318,6 +321,11 @@ function boot(B) {
   /* ── layout ─────────────────────────────────────────────────────────────── */
   let mode = 'spread', pw = 100, ph = 140, cur = 0, forced = null, mobile = false;
   let bookLeft = 0, bookTop = 0, shift = 0;
+  // one page or two: the studio sets how the book opens, the reader's own choice wins after that.
+  // The key carries the studio's setting, so changing it there is not hidden by an old choice.
+  const viewKey = 'view.' + (B.id || '') + '.' + (opts.view === 'single' ? 'single' : 'spread');
+  forced = store.get(viewKey) || (opts.view === 'single' ? 'single' : null);
+  if (forced !== 'single' && forced !== 'spread') forced = null;
 
   function views() { return mode === 'single' ? N : (coverAlone ? Math.floor(N / 2) + 1 : Math.ceil(N / 2)); }
   function vp(v) {
@@ -340,10 +348,12 @@ function boot(B) {
     const auto = N > 1 && !mobile && sSpread >= .72 * sSingle ? 'spread' : 'single';
     const first = firstPage(cur);
     const was = mode;
-    mode = forced || auto;
+    mode = mobile ? auto : forced || auto;          // a phone is never wide enough for two
     ph = Math.floor(mode === 'spread' ? sSpread : sSingle); pw = Math.floor(ph * A);
     if (was !== mode) cur = viewOf(first);
     root.classList.toggle('jf-single', mode === 'single');
+    const vb = $('.jf-bar [data-a=view]');
+    if (vb) { const t = mode === 'single' ? 'Show two pages side by side' : 'Show one page at a time'; vb.innerHTML = svg(mode === 'single' ? 'two' : 'one'); vb.title = t; vb.setAttribute('aria-label', t); }
     bookLeft = Math.round((st.width - 2 * pw) / 2); bookTop = Math.round((st.height - ph) / 2);
     Object.assign(book.style, { left: bookLeft + 'px', top: bookTop + 'px', width: 2 * pw + 'px', height: ph + 'px' });
     for (const s of [slotL, slotR]) { s.style.width = pw + 'px'; s.style.height = ph + 'px'; }
@@ -1088,6 +1098,12 @@ function boot(B) {
     else if (act === 'full') { closeAll(); fullscreen(); }
     else if (act === 'sound') { soundOn = !soundOn; store.set('sound', soundOn ? '1' : '0'); const b = $('.jf-bar [data-a=sound]'); if (b) b.innerHTML = svg(soundOn ? 'snd' : 'mute'); toast(soundOn ? 'Page sound on' : 'Page sound off'); }
     else if (act === 'more') { $('.jf-more').classList.toggle('on'); }
+    else if (act === 'view') {
+      if (F || G) return;
+      if (Z.on) exitZoom(false);
+      forced = mode === 'single' ? 'spread' : 'single'; store.set(viewKey, forced); layout();
+      toast(mode === 'single' ? 'One page at a time' : 'Two pages side by side');
+    }
     else if (act === 'goto') {
       const inp = el('input', 'jf-pin'); inp.type = 'text'; inp.inputMode = 'numeric'; inp.value = firstPage(cur) + 1;
       pn.replaceWith(inp); inp.select();
