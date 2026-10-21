@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "leisure-brochure-2027-2028",
+   "title": "JOR leisure Brochure 2027 2028",
+   "desc": "",
+   "n": 112,
+   "ver": 1,
+   "aspect": 1.29,
+   "cover": "leisure-brochure-2027-2028/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-10-21T18:24:56.336Z",
+   "listed": true,
+   "pdf": "JOR leisure Brochure 2027-28 - updated.pdf",
+   "uid": "m0ul8zssfzbww",
+   "first": "2026-10-21T18:24:56.336Z",
+   "history": []
+  },
+  {
    "id": "itineraries-2027-2028",
    "title": "Itineraries 2027-2028",
    "desc": "",
