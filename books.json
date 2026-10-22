@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "halloween-program",
+   "title": "Halloween program",
+   "desc": "",
+   "n": 5,
+   "ver": 1,
+   "aspect": 1.41,
+   "cover": "halloween-program/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-10-22T18:12:25.873Z",
+   "listed": true,
+   "pdf": "Halloween program.pdf",
+   "uid": "lxng04yyuz3iq",
+   "first": "2026-10-22T18:12:25.873Z",
+   "history": []
+  },
+  {
    "id": "leisure-brochure-2027-2028",
    "title": "JOR leisure Brochure 2027 2028",
    "desc": "",
