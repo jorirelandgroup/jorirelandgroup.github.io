@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "mice-program",
+   "title": "MICE Program",
+   "desc": "",
+   "n": 10,
+   "ver": 1,
+   "aspect": 1.41,
+   "cover": "mice-program/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-11-10T21:22:19.363Z",
+   "listed": true,
+   "pdf": "MICE Program - 27.28.pdf",
+   "uid": "v3nlky7f74hgj",
+   "first": "2026-11-10T21:22:19.363Z",
+   "history": []
+  },
+  {
    "id": "itineraries-2027-28",
    "title": "Itineraries 2027-28",
    "desc": "",
