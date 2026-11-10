@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "itineraries-2027-28",
+   "title": "Itineraries 2027-28",
+   "desc": "",
+   "n": 45,
+   "ver": 1,
+   "aspect": 1.41,
+   "cover": "itineraries-2027-28/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-11-10T21:09:42.364Z",
+   "listed": true,
+   "pdf": "New Itineraries 2027-28 - no mice.pdf",
+   "uid": "c9h22b7x6o9cs",
+   "first": "2026-11-10T21:09:42.364Z",
+   "history": []
+  },
+  {
    "id": "halloween-program",
    "title": "Halloween program",
    "desc": "",
