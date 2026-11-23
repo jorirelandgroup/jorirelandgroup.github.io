@@ -3,6 +3,22 @@
  "v": 2,
  "books": [
   {
+   "id": "joe-oreilly-golf-2027-2028",
+   "title": "Joe O'Reilly Golf 2027-2028",
+   "desc": "",
+   "n": 60,
+   "ver": 1,
+   "aspect": 1.29,
+   "cover": "joe-oreilly-golf-2027-2028/v1/cover.webp",
+   "ext": "webp",
+   "updated": "2026-11-23T22:23:51.106Z",
+   "listed": true,
+   "pdf": "Joe_OReilly_Golf_Brochure_Final 1.pdf",
+   "uid": "2juyrcgpu1ooy",
+   "first": "2026-11-23T22:23:51.106Z",
+   "history": []
+  },
+  {
    "id": "mice-program",
    "title": "MICE Program",
    "desc": "",
